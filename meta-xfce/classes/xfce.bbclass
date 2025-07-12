@@ -6,7 +6,10 @@ def xfce_verdir(v):
 HOMEPAGE = "http://www.xfce.org"
 SRC_URI = "http://archive.xfce.org/src/xfce/${BPN}/${@xfce_verdir("${PV}")}/${BPN}-${PV}.tar.bz2"
 
-inherit autotools gettext gtk-icon-cache pkgconfig
+inherit gettext gtk-icon-cache pkgconfig
+
+XFCEBASEBUILDCLASS ??= "autotools"
+inherit_defer ${XFCEBASEBUILDCLASS}
 
 DEPENDS += "intltool-native"
 
