@@ -3,8 +3,8 @@ Description = "Gerbera is a UPnP media server which allows you to stream your di
 LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE.md;md5=25cdec9afe3f1f26212ead6bd2f7fac8"
 
-SRC_URI = "git://github.com/gerbera/gerbera.git;protocol=https;branch=master"
-SRCREV = "870dd32d42f626dc2246d34b2224ffb6fd73e205"
+SRC_URI = "git://github.com/gerbera/gerbera.git;protocol=https;branch=master;tag=v${PV}"
+SRCREV = "7846f3dd5d0f848a60d0c3146c3b7290881a8992"
 
 
 DEPENDS = "pugixml sqlite3 zlib fmt spdlog util-linux-libuuid libupnp libnsl2"
