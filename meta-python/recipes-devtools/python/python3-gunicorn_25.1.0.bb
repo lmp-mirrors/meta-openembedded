@@ -1,9 +1,9 @@
 SUMMARY = "WSGI HTTP Server for UNIX"
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=5b70a8b30792a916f50dc96123e61ddf"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=5dc9171ccd8fcbd7827c850148b3ca98"
 
-SRC_URI[sha256sum] = "f006d110e5cb3102859b4f5cd48335dbd9cc28d0d27cd24ddbdafa6c60929408"
+SRC_URI[sha256sum] = "1426611d959fa77e7de89f8c0f32eed6aa03ee735f98c01efba3e281b1c47616"
 
 inherit pypi python_setuptools_build_meta ptest
 
@@ -15,6 +15,7 @@ SRC_URI += " \
 
 # python-misc for wsgiref
 RDEPENDS:${PN}-ptest += " \
+    bash \
     python3-eventlet \
     python3-gevent \
     python3-misc \
