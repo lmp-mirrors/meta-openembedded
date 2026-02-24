@@ -5,14 +5,14 @@ DESCRIPTION = "\
   "
 SECTION = "devel/python"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=118fecaa576ab51c1520f95e98db61ce"
+LIC_FILES_CHKSUM = "file://PKG-INFO;beginline=6;endline=6;md5=134f1026f0de92fd30e71976590a2868"
 
 PYPI_PACKAGE = "flask_cors"
 UPSTREAM_CHECK_PYPI_PACKAGE = "${PYPI_PACKAGE}"
 
 CVE_PRODUCT = "flask-cors"
 
-inherit pypi setuptools3
-SRC_URI[sha256sum] = "5aadb4b950c4e93745034594d9f3ea6591f734bb3662e16e255ffbf5e89c88ef"
+inherit pypi python_setuptools_build_meta
+SRC_URI[sha256sum] = "6e118f3698249ae33e429760db98ce032a8bf9913638d085ca0f4c5534ad2423"
 
 RDEPENDS:${PN} += "python3-flask"
