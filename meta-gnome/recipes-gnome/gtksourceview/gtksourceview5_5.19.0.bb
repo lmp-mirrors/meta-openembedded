@@ -20,7 +20,7 @@ REQUIRED_DISTRO_FEATURES = "opengl"
 
 GNOMEBN = "gtksourceview"
 
-SRC_URI[archive.sha256sum] = "051a78fe38f793328047e5bcd6d855c6425c0b480c20d9432179e356742c6ac0"
+SRC_URI[archive.sha256sum] = "242bf2c3dc51c44402294b584141399afe7cf87bfacf2b958685cece964301c5"
 S = "${UNPACKDIR}/gtksourceview-${PV}"
 
 GIR_MESON_ENABLE_FLAG = 'enabled'
