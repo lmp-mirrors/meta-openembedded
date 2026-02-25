@@ -9,8 +9,8 @@ LIC_FILES_CHKSUM = "file://LICENSE.md;md5=8f9b59a81a88da8e812af43728b72dd7"
 
 DEPENDS = "openssl"
 
-SRC_URI = "git://github.com/DMTF/libspdm.git;branch=release-3.8;protocol=https"
-SRCREV = "d7c8c8247b4d0bd8ed75d9f35a558a4df173a4c7"
+SRC_URI = "git://github.com/DMTF/libspdm.git;branch=release-3.8;protocol=https;tag=${PV}"
+SRCREV = "5cf0acb87b2f36f8d70a89e5da8476d85db59f46"
 
 inherit cmake
 
