@@ -6,10 +6,12 @@ DESCRIPTION = "llhttp is a HTTP/1.x parser generated from a bytecode-like \
 HOMEPAGE = "https://github.com/nodejs/llhttp"
 SECTION = "libs"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=f5e274d60596dd59be0a1d1b19af7978"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=9e4e583cb28b7e0c2ef8df4832706e96"
 
-SRC_URI = "git://github.com/nodejs/llhttp.git;protocol=https;branch=main;tag=release/v${PV}"
-SRCREV = "86b83a59786caebd581f38d613c64c9e8c52c79e"
+# The release/v* tags carry the generated sources and live on the "release"
+# branch, which shares no history with "main".
+SRC_URI = "git://github.com/nodejs/llhttp.git;protocol=https;branch=release;tag=release/v${PV}"
+SRCREV = "0e815792b167a9bd8ace259b95b7da953776c288"
 
 inherit cmake
 
